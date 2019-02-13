@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
   res.send('Connected to Dockerland');
 });
 // app.get('/', (req, res)=> { res.send(database.users) })
-app.post('/signin', signin.handleSignin(db, bcrypt));
+app.post('/signin', signin.handleSigninAuth(db, bcrypt));
 app.post('/register', (req, res) => {
   register.handleRegister(req, res, db, bcrypt);
 });
