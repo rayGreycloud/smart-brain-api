@@ -73,5 +73,6 @@ const handleSigninAuth = (db, bcrypt) => (req, res) => {
 };
 
 module.exports = {
-  handleSigninAuth: handleSigninAuth
+  handleSigninAuth: handleSigninAuth,
+  redisClient: redisClient
 };
